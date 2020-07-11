@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'coba.java.swing.MainForm'
+//mainClassName = 'coba.java.swing.db.DatabaseConnection'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    compile group: 'com.oracle.database.jdbc', name: 'ojdbc8', version: '19.7.0.0'
+}
